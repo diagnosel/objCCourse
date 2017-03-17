@@ -5,9 +5,8 @@
 //  Created by Аурика Сарева on 12.03.17.
 //  Copyright © 2017 Marika Marika. All rights reserved.
 //
-#import "items.h"
+#import "item.h"
 #import "ViewController.h"
-#define MARKUP(cost, percent) (cost * percent)
 
 @interface ViewController ()
 
@@ -52,28 +51,13 @@
     NSMutableArray *textRepresentation = [NSMutableArray array];
 
     for (NSDictionary *item in self.shop) {
-        NSString *title = [item objectForKey:@"title"];
-        NSNumber *cost = [item objectForKey:@"cost"];
-        NSNumber *availableNumber = [item objectForKey:@"availableNumber"];
-        NSString *manufacturer = [item objectForKey:@"manufacture"];
-        BOOL Discount  = [[item objectForKey:@"hasDiscount"] boolValue];
-        NSDateFormatter *DateOfManufacture= [item objectForKey:@"DateOfManufacture"];
-        
+         Item *itemObj = [[Item alloc] initWithDictionary:item];
       
       //  CGFloat discount = MARKUP(<#cost#> floatValue, <#percent#>);
         
-        if (Discount == YES) {
+        if (itemObj.hasDiscount == YES) {
             //представление товара
-            NSString *result =
-                [NSString stringWithFormat:@"Title - %@, cost - %@, available number - %@, manufacturer - %@, has discount -  %s, Date of manufacture - %@, MARKUP - %.2f",
-                    title,
-                    cost,
-                    availableNumber,
-                    manufacturer,
-                    (Discount == 1 ? "yes" : "no"),
-                    DateOfManufacture,
-                    MARKUP([cost intValue], 1.2)];
-
+            NSString *result = [itemObj itemDescription];
             [textRepresentation addObject:result];
         }
 

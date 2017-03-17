@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Items : NSObject
+@interface Item : NSObject
 
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+-(NSString *)itemDescription;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, assign) NSNumber *cost ;
 @property (nonatomic, assign) NSNumber *availableNumber;
 @property (nonatomic, strong) NSString *manufacturer;
-@property (nonatomic, assign) BOOL Discount;
+@property (nonatomic, assign) BOOL hasDiscount;
 @property (nonatomic, assign) NSDateFormatter *DateOfManufacture;
-
 
 @end
