@@ -121,9 +121,6 @@
     
     Item *item  = [self.items objectAtIndex:indexPath.row];
     
-    
-    cell.imageView.image = [UIImage imageNamed:@"Delicious Dozen-1"];
-                                                                                 
     cell.textLabel.text = item.title;
     cell.detailTextLabel.text = [item itemDescription];
     
@@ -139,6 +136,5 @@
     
     cell.accessoryType = (cell.accessoryType == UITableViewCellAccessoryCheckmark) ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
 }
-    
-    @end
 
+@end
