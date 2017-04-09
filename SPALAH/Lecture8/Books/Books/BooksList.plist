@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>author</key>
+		<string>George Orwell</string>
+		<key>title</key>
+		<string>Nineteen Eighty-Four</string>
+		<key>publisher</key>
+		<string>ACT</string>
+		<key>number of pages</key>
+		<integer>352</integer>
+		<key>year of publication </key>
+		<date>2017-04-02T22:04:40Z</date>
+		<key>hasInStock</key>
+		<true/>
+		<key>image</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>Irvin D. Yalom</string>
+		<key>title</key>
+		<string>The Schopenhauer Cure</string>
+		<key>publisher</key>
+		<string>Eksmo</string>
+		<key>number of pages</key>
+		<integer>544</integer>
+		<key>year of publication </key>
+		<date>2017-04-02T22:04:40Z</date>
+		<key>hasInStock</key>
+		<false/>
+		<key>image</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>Ray Bradbury</string>
+		<key>title</key>
+		<string>Dandelion Wine</string>
+		<key>publisher</key>
+		<string>Eksmo</string>
+		<key>number of pages</key>
+		<integer>352</integer>
+		<key>year of publication </key>
+		<date>2017-04-02T22:04:40Z</date>
+		<key>hasInStock</key>
+		<true/>
+		<key>image</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>Lev Tolstoy</string>
+		<key>title</key>
+		<string>Anna Karenina</string>
+		<key>publisher</key>
+		<string>Eksmo</string>
+		<key>number of pages</key>
+		<integer>800</integer>
+		<key>year of publication </key>
+		<date>2017-04-02T22:04:40Z</date>
+		<key>hasInStock</key>
+		<true/>
+		<key>image</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>Stendhal</string>
+		<key>title</key>
+		<string>Red and black</string>
+		<key>publisher</key>
+		<string>Folio</string>
+		<key>number of pages</key>
+		<integer>576</integer>
+		<key>year of publication </key>
+		<date>2017-04-02T22:04:40Z</date>
+		<key>hasInStock</key>
+		<false/>
+		<key>image</key>
+		<string>4</string>
+	</dict>
+</array>
+</plist>
