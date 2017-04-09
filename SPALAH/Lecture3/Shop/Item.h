@@ -12,6 +12,7 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 -(NSString *)itemDescription;
++ (Item*)defaultItem;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, assign) NSNumber *cost ;
 @property (nonatomic, assign) NSNumber *availableNumber;

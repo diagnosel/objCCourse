@@ -37,4 +37,16 @@
      _DateOfManufacture,
      MARKUP([_cost intValue], 1.2)];
 }
+
++ (Item*)defaultItem {
+    Item *item = [Item new];
+    item.title = @"Test";
+    item.cost = [NSNumber numberWithInt:12];
+    item.availableNumber = [NSNumber numberWithInt:5];
+    item.manufacturer = @"China";
+    item.hasDiscount = YES;
+    item.DateOfManufacture = [NSDate date];
+    
+    return item;
+}
 @end
