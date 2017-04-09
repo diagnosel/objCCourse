@@ -10,6 +10,7 @@
 #import "BooksDescription.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *toggleEditButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 //свойство класса для хранения информации о книгах
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
@@ -148,6 +149,45 @@
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.items removeObjectAtIndex:indexPath.row];
+        NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+                [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        BooksDescription *item = [BooksDescription defaultItem];
+        [self.items insertObject:item atIndex:indexPath.row];
+        NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+               [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationMiddle];
+    }
+    
+    [tableView reloadData];
+}
+
+#pragma mark - UI actions -
+- (IBAction)toggleButtonTapped:(id)sender {
+    if (self.tableView.isEditing) {
+        [self.tableView setEditing:NO animated:YES];
+        self.toggleEditButton.titleLabel.text = @"";
+        [self.toggleEditButton setTitle:@"Edit" forState:UIControlStateNormal];
+        
+    } else {
+        [self.tableView setEditing:YES animated:YES];
+        [self.toggleEditButton setTitle:@"Stop editing" forState:UIControlStateNormal];
+    }
+
 }
 
 @end

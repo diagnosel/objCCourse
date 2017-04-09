@@ -23,23 +23,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIX-iK-Pn8">
-                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <rect key="frame" x="16" y="28" width="343" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d7d-ZV-2Ky">
-                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLq-CY-aWY">
+                                <rect key="frame" x="126" y="34" width="102" height="30"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="toggleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="irk-KW-qFQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pLq-CY-aWY" secondAttribute="trailing" constant="131" id="JFu-L6-cQF"/>
                             <constraint firstItem="d7d-ZV-2Ky" firstAttribute="top" secondItem="QIX-iK-Pn8" secondAttribute="bottom" id="Nj5-ay-DQw"/>
                             <constraint firstItem="QIX-iK-Pn8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Nr9-RF-YTs"/>
+                            <constraint firstItem="d7d-ZV-2Ky" firstAttribute="top" secondItem="pLq-CY-aWY" secondAttribute="bottom" constant="8" id="QNy-xK-bnu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d7d-ZV-2Ky" secondAttribute="bottom" id="Rvb-ZL-jJX"/>
                             <constraint firstItem="QIX-iK-Pn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WKB-D2-fmf"/>
+                            <constraint firstItem="pLq-CY-aWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110" id="dHC-2c-w0e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QIX-iK-Pn8" secondAttribute="trailing" id="gZz-g2-WSb"/>
+                            <constraint firstItem="pLq-CY-aWY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="hdE-Uw-cw3"/>
                             <constraint firstAttribute="trailing" secondItem="d7d-ZV-2Ky" secondAttribute="trailing" id="mkP-9q-6AT"/>
                             <constraint firstItem="d7d-ZV-2Ky" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xze-xo-2AO"/>
                         </constraints>
@@ -47,10 +58,12 @@
                     <connections>
                         <outlet property="resultLabel" destination="QIX-iK-Pn8" id="zHm-YR-yyA"/>
                         <outlet property="tableView" destination="d7d-ZV-2Ky" id="FMz-df-Oq4"/>
+                        <outlet property="toggleEditButton" destination="pLq-CY-aWY" id="iGk-SW-vQ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-17" y="87"/>
         </scene>
     </scenes>
 </document>

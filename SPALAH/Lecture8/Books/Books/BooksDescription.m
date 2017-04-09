@@ -42,5 +42,12 @@
             (_hasStock == 1 ? "YES" : "NO")];
 }
 
++ (BooksDescription*)defaultItem {
+    BooksDescription *book = [BooksDescription new];
+    book.title = @"Test";
+    book.author = @"Author";
 
+    
+    return book;
+}
 @end

@@ -15,6 +15,8 @@
 - (id)initWithDictionary:(NSDictionary *)otherDictionary;
 - (NSString *)textDescription;
 
++ (BooksDescription*)defaultItem;
+
 @property (nonatomic, strong) NSString *author;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString* publisher;
