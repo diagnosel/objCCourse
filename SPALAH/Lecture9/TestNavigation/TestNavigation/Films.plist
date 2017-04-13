@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Shawshank redemption</string>
+		<key>year</key>
+		<string>1994</string>
+		<key>artists</key>
+		<string>Morgan Freeman, Tom Hanks</string>
+		<key>rating</key>
+		<real>8.800000000000001</real>
+		<key>description</key>
+		<string>Story about jail and freedom</string>
+		<key>image</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mask</string>
+		<key>year</key>
+		<string>1994</string>
+		<key>artists</key>
+		<string>Jim Carrey, Cameron Diaz</string>
+		<key>rating</key>
+		<integer>7</integer>
+		<key>description</key>
+		<string>MAAAsk!</string>
+		<key>image</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Matrix</string>
+		<key>year</key>
+		<string>1999</string>
+		<key>artists</key>
+		<string>Keeanu Reeves</string>
+		<key>rating</key>
+		<integer>8</integer>
+		<key>description</key>
+		<string>What pill would you take?</string>
+		<key>image</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Star Wars: Episode III - Revenge of the Sith</string>
+		<key>year</key>
+		<string>2005</string>
+		<key>artists</key>
+		<string>Ewan McGregor, Natalie Portman, Hayden Christensen</string>
+		<key>rating</key>
+		<integer>8</integer>
+		<key>description</key>
+		<string>Star Wars is an American epic space opera franchise, centered on a film series created by George Lucas. It depicts the adventures of various characters &quot;a long time ago in a galaxy far, far away&quot;.</string>
+		<key>image</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Ghost in the Shell</string>
+		<key>year</key>
+		<string>2017</string>
+		<key>artists</key>
+		<string>Scarlett Johansson</string>
+		<key>rating</key>
+		<integer>7</integer>
+		<key>description</key>
+		<string>Set in a near future when the line between humans and robots is blurring, the plot follows the Major (Johansson), a cyborg supersoldier who yearns to learn her past.</string>
+		<key>image</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Fight Club</string>
+		<key>year</key>
+		<string>1999</string>
+		<key>artists</key>
+		<string>Edward Norton, Brad Pitt</string>
+		<key>rating</key>
+		<real>8.699999999999999</real>
+		<key>description</key>
+		<string>Norton plays the unnamed protagonist, referred to as the narrator, who is discontented with his white-collar job. He forms a &quot;fight club&quot; with soap maker Tyler Durden, played by Pitt, and they are joined by men who also want to fight recreationally.</string>
+		<key>image</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Schindler&apos;s List</string>
+		<key>year</key>
+		<string>1993</string>
+		<key>artists</key>
+		<string>Liam Neeson, Ben Kingsley</string>
+		<key>rating</key>
+		<integer>9</integer>
+		<key>description</key>
+		<string>The film relates a period in the life of Oskar Schindler, an ethnic German businessman, during which he saved the lives of more than a thousand mostly Polish-Jewish refugees from the Holocaust by employing them in his factories.</string>
+		<key>image</key>
+		<string>6</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>A Beautiful Mind</string>
+		<key>year</key>
+		<string>2001</string>
+		<key>artists</key>
+		<string>Russell Crowe, Ed Harris</string>
+		<key>rating</key>
+		<integer>9</integer>
+		<key>description</key>
+		<string>Early in the film, Nash begins to develop paranoid schizophrenia and endures delusional episodes while painfully watching the loss and burden his condition brings on wife Alicia and friends.</string>
+		<key>image</key>
+		<string>7</string>
+	</dict>
+</array>
+</plist>
