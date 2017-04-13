@@ -23,6 +23,7 @@
 @property (nonatomic, assign) NSNumber* numberPages;
 @property (nonatomic, assign) NSDateFormatter* yearPublication;
 @property (nonatomic, assign) BOOL hasStock;
+@property (nonatomic, assign) NSString* image;
 
 
 @end

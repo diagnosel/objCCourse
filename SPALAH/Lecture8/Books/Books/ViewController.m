@@ -100,12 +100,14 @@
     
     BooksDescription* item = [self.items objectAtIndex:indexPath.row];
     
+    cell.imageView.image = [UIImage imageNamed:item.image];
+    
     cell.textLabel.text = item.title;
     cell.detailTextLabel.text = [item textDescription];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    switch (indexPath.row) {
+    /*switch (indexPath.row) {
         case 0:
             cell.imageView.image = [UIImage imageNamed:@"0.jpg"];
             break;
@@ -123,7 +125,7 @@
             break;
         default:
             break;
-    }
+    }*/
     //цвет ячеек
         UIView *colorCell = [[UIView alloc] init];
     colorCell.backgroundColor = [UIColor grayColor];

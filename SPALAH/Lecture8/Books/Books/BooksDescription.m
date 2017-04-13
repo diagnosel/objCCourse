@@ -20,6 +20,8 @@
         _numberPages = dictionary[@"number of pages"];
         _yearPublication = dictionary[@"year of publication"];
         _hasStock = dictionary[@"hasInStock"];
+        _image = dictionary[@"image"];
+     
     }
     return self;
     
@@ -46,6 +48,7 @@
     BooksDescription *book = [BooksDescription new];
     book.title = @"Test";
     book.author = @"Author";
+    book.image = nil;
 
     
     return book;
