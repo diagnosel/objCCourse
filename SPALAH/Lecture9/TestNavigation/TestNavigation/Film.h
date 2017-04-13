@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSNumber *rating;
 @property (nonatomic, strong) NSString *filmDescription;
 @property (nonatomic, assign) NSString* image;
+@property (nonatomic, assign) NSString* awards;
+@property (nonatomic, assign) NSString* fees;
 
 - (id)initWithDictionary:(NSDictionary*)dict;
 

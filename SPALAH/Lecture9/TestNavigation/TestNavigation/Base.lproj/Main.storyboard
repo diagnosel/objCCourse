@@ -14,20 +14,20 @@
         <scene sceneID="Zxz-lh-ADh">
             <objects>
                 <tableViewController id="yDH-iy-sv9" customClass="ViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NIm-N9-0yf">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="NIm-N9-0yf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellIdentifier" textLabel="H64-MY-yJD" style="IBUITableViewCellStyleDefault" id="fbY-uN-R2I">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fbY-uN-R2I" id="4mj-6c-8AX">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H64-MY-yJD">
-                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -45,11 +45,53 @@
                             <outlet property="delegate" destination="yDH-iy-sv9" id="oIf-Z3-NvM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Films" id="mH7-DR-CaR"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Films" id="mH7-DR-CaR">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="kUp-UO-7SV">
+                            <connections>
+                                <action selector="AddButtonTapped:" destination="yDH-iy-sv9" id="X8u-IX-RfJ"/>
+                                <segue destination="ldt-Xf-utx" kind="show" id="Aqq-TY-Ddp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="AddButton" destination="kUp-UO-7SV" id="wQL-u3-lyv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwC-ty-jBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234" y="169"/>
+        </scene>
+        <!--Add film-->
+        <scene sceneID="reM-jw-lLX">
+            <objects>
+                <tableViewController id="ldt-Xf-utx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GEA-8l-ewY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xqr-Eh-74Q">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xqr-Eh-74Q" id="X5y-8Y-NAy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ldt-Xf-utx" id="Asl-fN-anA"/>
+                            <outlet property="delegate" destination="ldt-Xf-utx" id="B8r-BY-X6P"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add film" id="JQ5-wc-Zgl"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knW-OS-ah4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="465"/>
         </scene>
         <!--Title-->
         <scene sceneID="Ctb-sf-CH0">
@@ -99,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofl-WN-4io" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="168.6656671664168"/>
+            <point key="canvasLocation" x="1030" y="-249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bX8-oG-RHr">

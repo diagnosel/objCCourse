@@ -16,6 +16,7 @@
 		234AF9D01E98003800EFE096 /* Films.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234AF9CF1E98003800EFE096 /* Films.plist */; };
 		234AF9D31E98018B00EFE096 /* Film.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF9D21E98018B00EFE096 /* Film.m */; };
 		234AF9D61E98065B00EFE096 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF9D51E98065B00EFE096 /* DetailsViewController.m */; };
+		2351858A1E9FAAA100D7FE84 /* AddFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235185891E9FAAA100D7FE84 /* AddFilmViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		234AF9D21E98018B00EFE096 /* Film.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Film.m; sourceTree = "<group>"; };
 		234AF9D41E98065B00EFE096 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		234AF9D51E98065B00EFE096 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		235185881E9FAAA100D7FE84 /* AddFilmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFilmViewController.h; sourceTree = "<group>"; };
+		235185891E9FAAA100D7FE84 /* AddFilmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFilmViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				234AF9BC1E97FF7400EFE096 /* ViewController.m */,
 				234AF9D41E98065B00EFE096 /* DetailsViewController.h */,
 				234AF9D51E98065B00EFE096 /* DetailsViewController.m */,
+				235185881E9FAAA100D7FE84 /* AddFilmViewController.h */,
+				235185891E9FAAA100D7FE84 /* AddFilmViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			files = (
 				234AF9BD1E97FF7400EFE096 /* ViewController.m in Sources */,
 				234AF9D61E98065B00EFE096 /* DetailsViewController.m in Sources */,
+				2351858A1E9FAAA100D7FE84 /* AddFilmViewController.m in Sources */,
 				234AF9D31E98018B00EFE096 /* Film.m in Sources */,
 				234AF9BA1E97FF7400EFE096 /* AppDelegate.m in Sources */,
 				234AF9B71E97FF7400EFE096 /* main.m in Sources */,
@@ -349,6 +355,7 @@
 				234AF9CB1E97FF7400EFE096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

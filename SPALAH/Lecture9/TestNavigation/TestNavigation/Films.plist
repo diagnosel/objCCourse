@@ -15,6 +15,10 @@
 		<string>Story about jail and freedom</string>
 		<key>image</key>
 		<string>0</string>
+		<key>awards</key>
+		<string>Oscar, Golden globe, Saturn</string>
+		<key>fees</key>
+		<string>$59 841 469 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -29,6 +33,10 @@
 		<string>MAAAsk!</string>
 		<key>image</key>
 		<string>1</string>
+		<key>awards</key>
+		<string>Oscar, Golden globe,MTV channel premium, Saturn</string>
+		<key>fees</key>
+		<string>$351 583 407 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -43,6 +51,10 @@
 		<string>What pill would you take?</string>
 		<key>image</key>
 		<string>2</string>
+		<key>awards</key>
+		<string>Oscar, Saturn, The British Academy</string>
+		<key>fees</key>
+		<string>$463 517 383 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -57,6 +69,10 @@
 		<string>Star Wars is an American epic space opera franchise, centered on a film series created by George Lucas. It depicts the adventures of various characters &quot;a long time ago in a galaxy far, far away&quot;.</string>
 		<key>image</key>
 		<string>3</string>
+		<key>awards</key>
+		<string>Oscar, Golden raspberry, Saturn</string>
+		<key>fees</key>
+		<string>$849 997 605 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -71,6 +87,10 @@
 		<string>Set in a near future when the line between humans and robots is blurring, the plot follows the Major (Johansson), a cyborg supersoldier who yearns to learn her past.</string>
 		<key>image</key>
 		<string>4</string>
+		<key>awards</key>
+		<string>-</string>
+		<key>fees</key>
+		<string>$129 196 421 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -85,6 +105,10 @@
 		<string>Norton plays the unnamed protagonist, referred to as the narrator, who is discontented with his white-collar job. He forms a &quot;fight club&quot; with soap maker Tyler Durden, played by Pitt, and they are joined by men who also want to fight recreationally.</string>
 		<key>image</key>
 		<string>5</string>
+		<key>awards</key>
+		<string>Oscar, MTV channel premium</string>
+		<key>fees</key>
+		<string>$100 853 753 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -99,6 +123,10 @@
 		<string>The film relates a period in the life of Oskar Schindler, an ethnic German businessman, during which he saved the lives of more than a thousand mostly Polish-Jewish refugees from the Holocaust by employing them in his factories.</string>
 		<key>image</key>
 		<string>6</string>
+		<key>awards</key>
+		<string>Oscar, Golden globe, Cesar, MTV channel premium, The British Academy</string>
+		<key>fees</key>
+		<string>$321 265 768 </string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -113,6 +141,11 @@
 		<string>Early in the film, Nash begins to develop paranoid schizophrenia and endures delusional episodes while painfully watching the loss and burden his condition brings on wife Alicia and friends.</string>
 		<key>image</key>
 		<string>7</string>
+		<key>awards</key>
+		<string>Oscar, Golden globe, Golden eagle, The British Academy</string>
+		<key>fees</key>
+		<string>$313 542 341 
+</string>
 	</dict>
 </array>
 </plist>

@@ -12,6 +12,10 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *films;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *AddButton;
+
+
+
 @end
 
 @implementation ViewController
@@ -73,6 +77,12 @@
     vc.selectedFilm = film;
     vc.title = film.title;
 }
+
+- (IBAction)AddButtonTapped:(id)sender {
+    
+}
+
+
 
 
 @end

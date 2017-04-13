@@ -19,7 +19,9 @@
         _artists = dict[@"artists"];
         _year = dict[@"year"];
         _filmDescription = dict[@"description"];
-         _image = dict[@"image"];
+        _image = dict[@"image"];
+        _awards = dict[@"awards"];
+        _fees = dict[@"fees"];
     }
     
     return self;
