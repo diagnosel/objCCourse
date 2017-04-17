@@ -11,7 +11,7 @@
 #import "DetailsViewController.h"
 #import "AddFilmViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <AddFilmViewControllerDelegate>
 @property (nonatomic, strong) NSMutableArray *films;
 @property (strong, nonatomic) IBOutlet UITableView *tableV;
 
