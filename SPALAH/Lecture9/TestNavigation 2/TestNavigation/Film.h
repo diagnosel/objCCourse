@@ -21,4 +21,6 @@
 
 - (id)initWithDictionary:(NSDictionary*)dict;
 
++ (Film*)defaultFilm;
+
 @end

@@ -27,4 +27,32 @@
     return self;
 }
 
+- (NSDictionary *)dictionary {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    [dict setObject:self.title forKey:@"title"];
+    [dict setObject:self.rating forKey:@"rating"];
+    [dict setObject:self.artists forKey:@"artists"];
+    [dict setObject:self.year forKey:@"year"];
+    [dict setObject:self.filmDescription forKey:@"description"];
+    [dict setObject:@"" forKey:@"image"];
+    [dict setObject:self.awards forKey:@"awards"];
+    [dict setObject:self.fees forKey:@"fees"];
+    return dict;
+}
+
++ (Film*)defaultFilm {
+    Film *film = [Film new];
+    film.title = @"Test";
+    film.rating = @"10";
+    film.artists = @"Matthew McConaughey";
+    film.year = @"1999";
+    film.filmDescription = @"Fairytale";
+    film.awards = @"Oscar, Golden globe";
+    film.fees = @"$313 542 341";
+    film.image = nil;
+    
+    return film;
+}
+
 @end

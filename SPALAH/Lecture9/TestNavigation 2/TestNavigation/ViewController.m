@@ -13,6 +13,8 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *films;
+@property (strong, nonatomic) IBOutlet UITableView *tableV;
+
 @end
 
 @implementation ViewController
@@ -39,6 +41,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - AddFilmViewControllerDelegate -
+
+- (void)didAddFilm:(Film *)film {
+    [self.films addObject:film];
+    [self.tableV reloadData];
 }
 
 #pragma mark - TableViewDataSource

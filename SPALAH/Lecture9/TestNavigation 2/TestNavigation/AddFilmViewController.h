@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Film;
+
+@protocol AddFilmViewControllerDelegate <NSObject>
+
+- (void)didAddFilm:(Film *)film;
+
+@end
 
 @interface AddFilmViewController : UIViewController
+
+@property (weak, nonatomic) id<AddFilmViewControllerDelegate> delegate;
 
 @end

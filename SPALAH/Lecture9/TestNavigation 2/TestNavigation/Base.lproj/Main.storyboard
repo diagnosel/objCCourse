@@ -59,6 +59,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableV" destination="NIm-N9-0yf" id="NAo-T0-6uU"/>
+                        <outlet property="tableView" destination="NIm-N9-0yf" id="bZ0-mn-UWm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jwC-ty-jBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,7 +262,7 @@
         <!--Add film-->
         <scene sceneID="9Tv-Uw-neT">
             <objects>
-                <viewController id="XWC-2N-pPl" sceneMemberID="viewController">
+                <viewController id="XWC-2N-pPl" customClass="AddFilmViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WHA-1P-de6"/>
                         <viewControllerLayoutGuide type="bottom" id="d55-yy-h7E"/>
@@ -266,17 +270,33 @@
                     <view key="view" contentMode="scaleToFill" id="fq2-rZ-FQI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="film name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-xx-D7D">
+                                <rect key="frame" x="16" y="92" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add film" id="0dj-Gu-Spk">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Pzn-1F-1pQ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Pzn-1F-1pQ">
+                            <connections>
+                                <action selector="SaveTapped:" destination="XWC-2N-pPl" id="dhm-RZ-SrB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="field" destination="0ca-xx-D7D" id="5Jv-nM-7OB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UR9-lB-EGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="531"/>
+            <point key="canvasLocation" x="976.79999999999995" y="530.28485757121439"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bX8-oG-RHr">

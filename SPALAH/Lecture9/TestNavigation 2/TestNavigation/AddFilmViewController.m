@@ -7,8 +7,10 @@
 //
 
 #import "AddFilmViewController.h"
+#import "Film.h"
 
 @interface AddFilmViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *field;
 
 @end
 
@@ -22,6 +24,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)SaveTapped:(UIBarButtonItem *)sender {
+    Film *film = [Film defaultFilm];
+    film.title = self.field.text;
+    
+    if ([self.delegate respondsToSelector:@selector(didAddFilm:)]) {
+        [self.delegate didAddFilm:film];
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
