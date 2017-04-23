@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232E0ACF1EAD570700405A35 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E0ACE1EAD570700405A35 /* Artist.m */; };
+		232E0AD11EAD571A00405A35 /* Artists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 232E0AD01EAD571A00405A35 /* Artists.plist */; };
+		232E0AD41EAD5BB600405A35 /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232E0AD31EAD5BB600405A35 /* RatingViewController.m */; };
 		234AF9B71E97FF7400EFE096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF9B61E97FF7400EFE096 /* main.m */; };
 		234AF9BA1E97FF7400EFE096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF9B91E97FF7400EFE096 /* AppDelegate.m */; };
 		234AF9BD1E97FF7400EFE096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234AF9BC1E97FF7400EFE096 /* ViewController.m */; };
@@ -20,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232E0ACD1EAD570700405A35 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		232E0ACE1EAD570700405A35 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		232E0AD01EAD571A00405A35 /* Artists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artists.plist; sourceTree = "<group>"; };
+		232E0AD21EAD5BB600405A35 /* RatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewController.h; sourceTree = "<group>"; };
+		232E0AD31EAD5BB600405A35 /* RatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewController.m; sourceTree = "<group>"; };
 		234AF9B21E97FF7400EFE096 /* TestNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234AF9B61E97FF7400EFE096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		234AF9B81E97FF7400EFE096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				234AF9CF1E98003800EFE096 /* Films.plist */,
+				232E0ACD1EAD570700405A35 /* Artist.h */,
+				232E0ACE1EAD570700405A35 /* Artist.m */,
+				232E0AD01EAD571A00405A35 /* Artists.plist */,
 				234AF9D11E98018B00EFE096 /* Film.h */,
 				234AF9D21E98018B00EFE096 /* Film.m */,
 			);
@@ -110,6 +121,8 @@
 				234AF9D51E98065B00EFE096 /* DetailsViewController.m */,
 				2351858B1E9FCF9000D7FE84 /* AddFilmViewController.h */,
 				2351858C1E9FCF9000D7FE84 /* AddFilmViewController.m */,
+				232E0AD21EAD5BB600405A35 /* RatingViewController.h */,
+				232E0AD31EAD5BB600405A35 /* RatingViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +194,7 @@
 			files = (
 				234AF9D01E98003800EFE096 /* Films.plist in Resources */,
 				234AF9C51E97FF7400EFE096 /* LaunchScreen.storyboard in Resources */,
+				232E0AD11EAD571A00405A35 /* Artists.plist in Resources */,
 				234AF9C21E97FF7400EFE096 /* Assets.xcassets in Resources */,
 				234AF9C01E97FF7400EFE096 /* Main.storyboard in Resources */,
 			);
@@ -198,7 +212,9 @@
 				2351858D1E9FCF9000D7FE84 /* AddFilmViewController.m in Sources */,
 				234AF9D31E98018B00EFE096 /* Film.m in Sources */,
 				234AF9BA1E97FF7400EFE096 /* AppDelegate.m in Sources */,
+				232E0AD41EAD5BB600405A35 /* RatingViewController.m in Sources */,
 				234AF9B71E97FF7400EFE096 /* main.m in Sources */,
+				232E0ACF1EAD570700405A35 /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

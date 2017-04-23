@@ -69,7 +69,7 @@
     
     cell.textLabel.text = film.title;
     
-    cell.detailTextLabel.text = film.rating;
+    cell.detailTextLabel.text = [film.rating stringValue];
     
     cell.imageView.image = [UIImage imageNamed:film.image];
     

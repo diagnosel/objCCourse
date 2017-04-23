@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Ева Грин</string>
+		<key>born</key>
+		<string>6 июля, 1980 </string>
+		<key>place_born</key>
+		<string>Париж, Франция</string>
+		<key>genres</key>
+		<string>драма, фэнтези, мелодрама</string>
+		<key>total_films</key>
+		<string>58</string>
+		<key>photo</key>
+		<string>eva_grin</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Хью Лори</string>
+		<key>born</key>
+		<string>11 июня, 1959 </string>
+		<key>place_born</key>
+		<string>Оксфорд, Великобритания</string>
+		<key>genres</key>
+		<string>комедия, мультфильм, семейный</string>
+		<key>total_films</key>
+		<string>196</string>
+		<key>photo</key>
+		<string>hugh_laury</string>
+	</dict>
+</array>
+</plist>

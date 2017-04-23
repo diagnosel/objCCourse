@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Райан Гослинг </string>
+		<key>born</key>
+		<string>12 ноября, 1980</string>
+		<key>place_birth</key>
+		<string></string>
+		<key>movies</key>
+		<string>La La Land, The Notebook, The nice guys, The place beyond the pines etc.</string>
+	</dict>
+</array>
+</plist>
